@@ -1,6 +1,8 @@
+version: "3.0"
+
 services:
   pg:
-    image: postgres_pg_cron:1.0
+    image: rickors560/postgres15-pg-cron:1.0
     environment:
       POSTGRES_DB: test
       POSTGRES_USER: postgres
@@ -8,5 +10,3 @@ services:
       PG_CRON_DB: test
     ports:
       - "5432:5432"
-
-      # /usr/share/postgresql/15/extension/pg_cron.control
